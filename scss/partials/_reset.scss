@@ -1,8 +1,6 @@
-
-@mixin colorfuente-fuente{
+@mixin colorfuente-fuente {
     color: #2c3e50;
     font-family: 'Roboto', sans-serif;
-
 }
 
 * {
@@ -15,5 +13,4 @@
 body {
     background-color: $color-blanco-body;
     @include colorfuente-fuente;
-
 }

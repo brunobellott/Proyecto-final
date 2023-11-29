@@ -1,6 +1,6 @@
 /* Main contacto */
 
-@mixin flex-column-left{
+@mixin flex-column-left {
     display: flex;
     flex-direction: column;
     text-align: left;
@@ -18,7 +18,7 @@ form {
     padding: 50px 55px;
     box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
     border-radius: 20px;
-    text-align: center;
+    text-align: $alinear-centro;
     width: 640px;
     background-color: lightblue;
 }
@@ -31,7 +31,6 @@ form {
 h2 {
     color: #283629;
     font-size: 35px;
-
 }
 
 
@@ -65,16 +64,14 @@ textarea::placeholder {
     margin-bottom: 30px;
     display: flex;
     justify-content: space-between;
-    text-align: center;
+    text-align: $alinear-centro;
 
-
-}
-
-.formtext a {
-    color: #76b28e;
-    font-size: 14px;
-    font-weight: 600;
-    text-decoration: none;
+    a {
+        color: #76b28e;
+        font-size: 14px;
+        font-weight: 600;
+        text-decoration: none;
+    }
 }
 
 .btn {
@@ -85,17 +82,15 @@ textarea::placeholder {
     background-color: $boton-verde;
     box-shadow: 0 0 20px rgba(25, 254, 0, 0.4);
     cursor: pointer;
-}
 
-.btn:hover {
-    background-color: #0c180c4b;
-
+    &:hover {
+        background-color: #0c180c4b;
+    }
 }
 
 /* Responsive contacto */
 
-@media(max-width:991px) {
-
+@media (max-width: 991px) {
     body {
         padding: 30px;
     }

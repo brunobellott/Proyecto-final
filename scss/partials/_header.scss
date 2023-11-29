@@ -1,9 +1,10 @@
 /* Header */
 
-@mixin spacebetween-center{
-    justify-content:space-between;
-    align-items:center;
+@mixin spacebetween-center {
+    justify-content: space-between;
+    align-items: center;
 }
+
 @mixin column-center {
     flex-direction: column;
     align-items: center;
