@@ -1,383 +1,313 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@1,300&display=swap');
-
+@charset "UTF-8";
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@1,300&display=swap");
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-size: 20px;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-size: 20px;
 }
 
 body {
-    background-color: #ffffff;
-    color: #2c3e50;
-    font-family: 'Roboto', sans-serif;
-
+  background-color: #ffffff;
+  color: #2c3e50;
+  font-family: "Roboto", sans-serif;
 }
-
 
 /* Header */
-
 .header {
-    display: flex;
-    background-color: #3498db;
-    color: #ffffff;
-    justify-content: space-between;
-    align-items: center;
-    padding: 5px 10%;
-    min-height: 90px;
-
+  display: flex;
+  background-color: #3498db;
+  color: #ffffff;
+  justify-content: space-between;
+  align-items: center;
+  padding: 5px 10%;
+  min-height: 90px;
 }
-
 .header .logo img {
-    height: 70px;
-    width: auto;
-    cursor: pointer;
-    transition: 0, 3s;
-
+  height: 70px;
+  width: auto;
+  cursor: pointer;
+  transition: 0, 3s;
 }
-
 .header .logo img:hover {
-    transform: scale(1.2);
-
+  transform: scale(1.2);
 }
-
 .header .navlinks li {
-    display: inline-block;
-    padding: 0 20px;
-    list-style: none;
-
+  display: inline-block;
+  padding: 0 20px;
+  list-style: none;
 }
-
 .header .navlinks li:hover {
-    transform: scale(1.1);
+  transform: scale(1.1);
 }
-
 .header .navlinks a {
-    font-size: 700;
-    color: wheat;
-    text-decoration: none;
-
+  font-size: 700;
+  color: wheat;
+  text-decoration: none;
 }
 
 /* Responsive header */
-
 @media (max-width: 768px) {
-    .header {
-        flex-direction: column;
-        align-items:center;
-    }
-    .header .logo img{
-        height: 80px;
-    }
-
-    .header .navlinks {
-        margin-top: 10px;
-    }
-
-    .header .navlinks li {
-        margin-right: 0;
-        margin-bottom: 8px;
-    }
+  .header {
+    flex-direction: column;
+    align-items: center;
+  }
+  .header .logo img {
+    height: 80px;
+  }
+  .header .navlinks {
+    margin-top: 10px;
+  }
+  .header .navlinks li {
+    margin-right: 0;
+    margin-bottom: 8px;
+  }
 }
-
-
 /* main inicio */
-
 main {
-    align-items: center;
-    padding: 20px;
-    border: 20px;
-    margin: auto;
+  align-items: center;
+  padding: 20px;
+  border: 20px;
+  margin: auto;
 }
-
 main .titulo {
-    display: flex;
-    align-items: center;
-    justify-content: space-around;
-    font-size: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  font-size: 50px;
 }
 
 /* Main contacto */
-
 .contacto-main {
-    display: flex;
-    align-items: center;
-    justify-content: space-around;
-    background-image: url(/img/oktopus-1.png)
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  background-image: url(/img/oktopus-1.png);
 }
 
 form {
-    padding: 50px 55px;
-    box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
-    border-radius: 20px;
-    text-align: center;
-    width: 640px;
-    background-color: lightblue
+  padding: 50px 55px;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+  border-radius: 20px;
+  text-align: center;
+  width: 640px;
+  background-color: lightblue;
 }
 
 .inputgroup {
-    display: flex;
-    flex-direction: column;
-    text-align: left;
-
+  display: flex;
+  flex-direction: column;
+  text-align: left;
 }
 
 h2 {
-    color: #283629;
-    font-size: 35px;
-
+  color: #283629;
+  font-size: 35px;
 }
 
-
 label {
-    font-weight: 600;
-    font-size: 15px;
-    margin-bottom: 15px;
-    color: #283629;
+  font-weight: 600;
+  font-size: 15px;
+  margin-bottom: 15px;
+  color: #283629;
 }
 
 input,
 textarea {
-    background-color: #EDFFF0;
-    width: 100%;
-    padding: 17px 25px;
-    border: 2px solid #F0FAF1;
-    border-radius: 25px;
-    font-size: 16px;
-    margin-bottom: 20px;
-    color: #283629;
-    outline: none;
+  background-color: #EDFFF0;
+  width: 100%;
+  padding: 17px 25px;
+  border: 2px solid #F0FAF1;
+  border-radius: 25px;
+  font-size: 16px;
+  margin-bottom: 20px;
+  color: #283629;
+  outline: none;
 }
 
 input::placeholder,
 textarea::placeholder {
-    color: #b5cab6;
-
+  color: #b5cab6;
 }
 
 .formtext {
-    margin-bottom: 30px;
-    display: flex;
-    justify-content: space-between;
-    text-align: center;
-
-
+  margin-bottom: 30px;
+  display: flex;
+  justify-content: space-between;
+  text-align: center;
 }
 
 .formtext a {
-    color: #76b28e;
-    font-size: 14px;
-    font-weight: 600;
-    text-decoration: none;
+  color: #76b28e;
+  font-size: 14px;
+  font-weight: 600;
+  text-decoration: none;
 }
 
 .btn {
-    font-size: 16px;
-    color: #ffffff;
-    border: 0;
-    border-radius: 25px;
-    background-color: #51d94c;
-    box-shadow: 0 0 20px rgba(25, 254, 0, 0.4);
-    cursor: pointer;
+  font-size: 16px;
+  color: #ffffff;
+  border: 0;
+  border-radius: 25px;
+  background-color: #51d94c;
+  box-shadow: 0 0 20px rgba(25, 254, 0, 0.4);
+  cursor: pointer;
 }
 
 .btn:hover {
-    background-color: #0c180c4b;
-
+  background-color: rgba(12, 24, 12, 0.2941176471);
 }
 
 /* Responsive contacto */
-
-@media(max-width:991px) {
-
-    body {
-        padding: 30px;
-    }
-
-    form {
-        padding: 50px 30px;
-        width: 100%;
-    }
-
-    input {
-        padding: 15px;
-    }
+@media (max-width: 991px) {
+  body {
+    padding: 30px;
+  }
+  form {
+    padding: 50px 30px;
+    width: 100%;
+  }
+  input {
+    padding: 15px;
+  }
 }
-
 /* main sucursales */
-
 .sucursal-main {
-    background-image: url(/img/oktopus-1.png);
+  background-image: url(/img/oktopus-1.png);
 }
 
 .sucursales {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: space-between;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
 }
-
 .sucursales h3 {
-    padding: 20px;
-    color: rgb(255, 255, 255);
-    align-items: center;
-    display: flex;
-    justify-content: space-around;
-
+  padding: 20px;
+  color: rgb(255, 255, 255);
+  align-items: center;
+  display: flex;
+  justify-content: space-around;
 }
 
 /* Responsive sucursales */
-
 /* Pantallas pequeñas (móviles) */
 @media (max-width: 576px) {
-    .sucursales {
-        display: flex;
-        flex-direction: column;
-    }
-
-    .sucursal {
-        width: 100%;
-    }
-
-    iframe {
-        width: 100%;
-        height: 250px;
-    }
+  .sucursales {
+    display: flex;
+    flex-direction: column;
+  }
+  .sucursal {
+    width: 100%;
+  }
+  iframe {
+    width: 100%;
+    height: 250px;
+  }
 }
-
 /* Pantallas medianas (tabletas) */
 @media (min-width: 577px) and (max-width: 768px) {
-    .sucursales {
-        display: flex;
-        flex-direction: column;
-    }
-
-    .sucursal {
-        width: 50%;
-    }
-
-    iframe {
-        width: 100%;
-        height: 300px;
-    }
+  .sucursales {
+    display: flex;
+    flex-direction: column;
+  }
+  .sucursal {
+    width: 50%;
+  }
+  iframe {
+    width: 100%;
+    height: 300px;
+  }
 }
-
 /* Pantallas grandes (escritorios) */
 @media (min-width: 769px) {
-    .sucursales {
-        display: flex;
-        flex-direction: column;
-    }
-
-    .sucursal {
-        width: 50%;
-    }
-
-    iframe {
-        width: 100%;
-        height: 400px;
-    }
+  .sucursales {
+    display: flex;
+    flex-direction: column;
+  }
+  .sucursal {
+    width: 50%;
+  }
+  iframe {
+    width: 100%;
+    height: 400px;
+  }
 }
-
-
 /* main rutinas */
-
 .rutina-main {
-    background-image: url(/img/oktopus-1.png);
-}
-
-.rutinas {
-    display: grid;
-    column-gap: 10px;
-    row-gap: 5px;
-    align-items: center;
-    justify-items: start;
-    grid-template-columns: auto auto;
-    grid-template-rows: auto auto;
-
+  background-image: url(/img/oktopus-1.png);
 }
 
 /* main precios */
-
 .precio-main {
-    background-image: url(/img/oktopus-1.png);
-}
-
-.precios {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: space-around;
+  background-image: url(/img/oktopus-1.png);
 }
 
 /* Footer */
-
 .piedepagina {
-    width: 100%;
-    background-color: #ecf0f1;
-    color: #2c3e50;
-
+  width: 100%;
+  background-color: #ecf0f1;
+  color: #2c3e50;
 }
 
 .piedepagina .grupo1 {
-    width: 100%;
-    max-width: 1200px;
-    margin: auto;
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    grid-gap: 50px;
-    padding: 45px 0px;
+  width: 100%;
+  max-width: 1200px;
+  margin: auto;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 50px;
+  padding: 45px 0px;
 }
 
 .piedepagina .grupo1 .box figure {
-    width: 100%;
-    height: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .piedepagina .grupo1 .box figure img {
-    width: 250px;
+  width: 250px;
 }
 
 .piedepagina .grupo1 .box h2 {
-    color: rgb(88, 68, 31);
-    margin-bottom: 25px;
-    font-size: 20px;
+  color: rgb(88, 68, 31);
+  margin-bottom: 25px;
+  font-size: 20px;
 }
 
 .piedepagina .grupo1 .box p {
-    color: rgb(15, 14, 14);
-    margin-bottom: 10px;
+  color: rgb(15, 14, 14);
+  margin-bottom: 10px;
 }
 
 .piedepagina .grupo1 .redsocial a {
-    display: inline-block;
-    text-decoration: none;
-    width: 45px;
-    height: 45px;
-    line-height: 45px;
-    color: wheat;
-    margin-right: 10px;
-    background-color: blue;
-    text-align: center;
-    transition: all 300ms ease;
+  display: inline-block;
+  text-decoration: none;
+  width: 45px;
+  height: 45px;
+  line-height: 45px;
+  color: wheat;
+  margin-right: 10px;
+  background-color: blue;
+  text-align: center;
+  transition: all 300ms ease;
 }
 
 .piedepagina .grupo1 .redsocial a:hover {
-    color: aqua;
-
+  color: aqua;
 }
 
 /* Responsive footer */
-
-@media screen and (max-width:800px) {
-    .piedepagina .grupo1 {
-        width: 90%;
-        grid-template-columns: repeat(1, 1fr);
-        grid-gap: 30px;
-        padding: 35px 0px;
-    }
+@media screen and (max-width: 800px) {
+  .piedepagina .grupo1 {
+    width: 90%;
+    grid-template-columns: repeat(1, 1fr);
+    grid-gap: 30px;
+    padding: 35px 0px;
+  }
 }
+
+/*# sourceMappingURL=style.css.map */

@@ -1,0 +1,111 @@
+/* Main contacto */
+
+@mixin flex-column-left{
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+
+}
+
+.contacto-main {
+    display: flex;
+    align-items: $alinear-centro;
+    justify-content: space-around;
+    background-image: url(/img/oktopus-1.png)
+}
+
+form {
+    padding: 50px 55px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+    border-radius: 20px;
+    text-align: center;
+    width: 640px;
+    background-color: lightblue;
+}
+
+.inputgroup {
+    @include flex-column-left;
+
+}
+
+h2 {
+    color: #283629;
+    font-size: 35px;
+
+}
+
+
+label {
+    font-weight: 600;
+    font-size: 15px;
+    margin-bottom: 15px;
+    color: #283629;
+}
+
+input,
+textarea {
+    background-color: #EDFFF0;
+    width: 100%;
+    padding: 17px 25px;
+    border: 2px solid #F0FAF1;
+    border-radius: 25px;
+    font-size: 16px;
+    margin-bottom: 20px;
+    color: #283629;
+    outline: none;
+}
+
+input::placeholder,
+textarea::placeholder {
+    color: #b5cab6;
+
+}
+
+.formtext {
+    margin-bottom: 30px;
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+
+
+}
+
+.formtext a {
+    color: #76b28e;
+    font-size: 14px;
+    font-weight: 600;
+    text-decoration: none;
+}
+
+.btn {
+    font-size: 16px;
+    color: #ffffff;
+    border: 0;
+    border-radius: 25px;
+    background-color: $boton-verde;
+    box-shadow: 0 0 20px rgba(25, 254, 0, 0.4);
+    cursor: pointer;
+}
+
+.btn:hover {
+    background-color: #0c180c4b;
+
+}
+
+/* Responsive contacto */
+
+@media(max-width:991px) {
+
+    body {
+        padding: 30px;
+    }
+
+    form {
+        padding: 50px 30px;
+        width: 100%;
+    }
+
+    input {
+        padding: 15px;
+    }
+}
