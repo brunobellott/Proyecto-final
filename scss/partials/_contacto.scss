@@ -11,7 +11,7 @@
     display: flex;
     align-items: $alinear-centro;
     justify-content: space-around;
-    background-image: url(/img/oktopus-1.png)
+
 }
 
 form {
@@ -91,10 +91,6 @@ textarea::placeholder {
 /* Responsive contacto */
 
 @media (max-width: 991px) {
-    body {
-        padding: 30px;
-    }
-
     form {
         padding: 50px 30px;
         width: 100%;

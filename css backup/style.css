@@ -283,19 +283,19 @@ textarea::placeholder {
 /* main rutinas */
 
 .rutina-main {
-    background-image: url(/img/oktopus-1.png);
+    background-image: url(img/oktopus-1.png);
 }
 
 /* main precios */
 
 .precio-main {
-    background-image: url(/img/oktopus-1.png);
+    background-image: url(img/oktopus-1.png);
 }
 
 /* Footer */
 
 .piedepagina {
-    width: 100%;
+    width: 100%; 
     background-color: #ecf0f1;
     color: #2c3e50;
 
