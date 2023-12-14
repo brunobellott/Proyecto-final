@@ -8,9 +8,10 @@
     content="Bienvenido a GYM A FULL,tu destino virtual para descubrir un mundo de fitness y bienestar. Desde nuestra página de inicio, donde encontrarás una presentación atractiva con imágenes motivadoras, hasta nuestras secciones especializadas, te invitamos a explorar todo lo que tenemos para ofrecer.">
   <meta name="keywords" content="Gimnasios,gimnasio,Gerli,Avellaneda,fitness,musculacion">
   <title>Gym a full</title>
-  <link rel="shortcut icon" href="./img/LOGO RUTA.png">
+  <link rel="shortcut icon" href="./img/logo favicon.png">
   <link rel="stylesheet" href="./css/bootstrap.css">
   <link rel="stylesheet" href="./css/style.css">
+  <!-- Box icons -->
   <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
 
 </head>
@@ -19,20 +20,36 @@
 
   <!-- Header -->
 
-  <header class="header">
-    <div class="logo">
-      <a href="./index.html">
-        <img src="./img/LOGO RUTA.png" alt="logo">
-      </a>
-    </div>
-    <nav>
-      <ul class="navlinks">
-        <li><a href="./index.html"><i class='bx bx-home'></i>Inicio</a></li>
-        <li><a href="./pages/contacto.html"><i class='bx bxs-user'></i>Contacto</a></li>
-        <li><a href="./pages/sucursales.html"><i class='bx bxs-directions'></i>Sucursales</a></li>
-        <li><a href="./pages/rutinas.html"><i class='bx bx-dumbbell'></i>Rutinas</a></li>
-        <li><a href="./pages/precios.html"><i class='bx bx-money'></i>Precios</a></li>
-      </ul>
+  <header>
+    <nav class="navbar navbar-expand-lg" style="background-color: #3498db;">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="./index.html"><img class="logo" src="./img/LOGO.png" alt="logo" width="130px"></a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+          aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse justify-content-center" id="navbarNav">
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="./index.html" style="color: #ffffff;">Inicio</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="./pages/contacto.html" style="color: #ffffff;">Contacto</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="./pages/sucursales.html" style="color:#ffffff">Sucursales</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="./pages/rutinas.html"
+                style="color: #ffffff;">Rutinas</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="./pages/precios.html"
+                style="color: #ffffff;">Precios</a>
+            </li>
+          </ul>
+        </div>
+      </div>
     </nav>
   </header>
   <main>
@@ -51,13 +68,13 @@
       </div>
       <div class="carousel-inner">
         <div class="carousel-item active">
-          <img src="./img/xdTipos-maquinas-para-gimnasio-Bodytone.jpg" class="d-block w-100" alt="gimnasio por dentro">
+          <img src="./img/fondo de gimnasio.jpg" class="d-block w-100" alt="gimnasio por dentro">
         </div>
         <div class="carousel-item">
-          <img src="./img/xdmaquinas-para-gimnasios.jpg" class="d-block w-100" alt="espacio del gimnasio">
+          <img src="./img/fondo para gimnasio.jpg" class="d-block w-100" alt="espacio del gimnasio">
         </div>
         <div class="carousel-item">
-          <img src="./img/xdDAN03802-1920x1080.jpg" class="d-block w-100" alt="instalaciones">
+          <img src="./img/el fondo del gimnasio.jpg" class="d-block w-100" alt="instalaciones">
         </div>
       </div>
       <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators"
@@ -80,7 +97,7 @@
     <div class="grupo1">
       <div class="box">
         <figure>
-          <img src="./img/LOGO RUTA.png" alt="logo footer">
+          <img src="./img/LOGO.png" alt="logo footer">
         </figure>
       </div>
       <div class="box">
